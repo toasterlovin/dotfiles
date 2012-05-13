@@ -1,0 +1,56 @@
+" Credits
+
+" My vim configuration is largely copied from and inspired by Mislav Marohnic.
+" Specifically, this blog post:  http://mislav.uniqpath.com/2011/12/vim-revisited/
+
+" A lot of credit is due to Tim Pope, who is the author of a bunch of useful
+" Vim plugins. Find his work at https://github.com/tpope
+
+call pathogen#infect()          " Load installed plugins with Pathogen
+
+set nocompatible                " Choose no compatibility with legacy vi
+set encoding=utf-8              " Use UTF-8 encoding
+filetype plugin indent on       " Load file type plugins + indentation
+
+set showcmd                     " Display incomplete commands
+set ruler                       " Show column and row coordinates of cursor
+set cursorline                  " Highlight the line cursor is on
+set relativenumber              " Show line numbers relative to cursor
+
+syntax enable                   " Enable syntax highlighting
+set background=light            " Use a light background by default
+colorscheme solarized           " Use solarized color scheme, see https://github.com/altercation/solarized/tree/master/vim-colors-solarized
+call togglebg#map("<F5>")       " Map F5 to toggle betwee light and dark background
+" Syntax highlight JSON files as JavaScript
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
+"" Whitespace
+set nowrap                      " Don't wrap lines
+set tabstop=2 shiftwidth=2      " A tab is two spaces (or set this to 4)
+set expandtab                   " Use spaces, not tabs (optional)
+set backspace=indent,eol,start  " Backspace through everything in insert mode
+
+"" List chars
+set list                        " Turn on list mode
+set listchars=""                " Reset the listchars
+set listchars=tab:\ \           " Show tabs as " "
+set listchars+=trail:.          " Show trailing spaces as dots
+set listchars+=extends:>        " Show ">" in last column of line if line extends beyond right edge of screen
+set listchars+=precedes:<       " Show "<" in first column of line if line extends beyond left edge of screen
+
+"" Searching
+set hlsearch                    " Highlight matches
+set incsearch                   " Incremental searching
+set ignorecase                  " Searches are case insensitive...
+set smartcase                   " ... unless they contain at least one capital letter
+" Clear the search buffer when hitting return
+:nnoremap <CR> :nohlsearch<cr>
+
+set backupdir=~/.vim/_backup    " Where to put backup files.
+set directory=~/.vim/_temp      " Where to put swap files.
+
+" Easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l

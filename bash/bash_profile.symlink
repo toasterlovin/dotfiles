@@ -1,0 +1,8 @@
+export PS1="\[\e[0;35m\][\d \t][\u@\h]\n\w $ \[\e[0m\]"
+
+# Put the Homebrew binary directories before the system directories in the path.
+# This is required for some brews to work correctly.
+PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+
+# Load RVM function
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

@@ -1,0 +1,8 @@
+# Make pane resizing more Vim-like
+bind -r C-j resize-pane -D 5
+bind -r C-k resize-pane -U 5
+bind -r C-h resize-pane -L 5
+bind -r C-l resize-pane -R 5
+
+# Use 256 color terminal
+set -g default-terminal "screen-256color"

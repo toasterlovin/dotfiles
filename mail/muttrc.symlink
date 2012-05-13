@@ -1,0 +1,5 @@
+# Source acccount settings
+source ~/.mutt_accounts
+
+# Use Solarized color scheme
+source ~/.mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
