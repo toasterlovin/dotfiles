@@ -7,6 +7,7 @@
 " Vim plugins. Find his work at https://github.com/tpope
 
 call pathogen#infect()          " Load installed plugins with Pathogen
+runtime macros/matchit.vim      " Enable matchit for textobj-rubyblock
 
 set nocompatible                " Choose no compatibility with legacy vi
 set encoding=utf-8              " Use UTF-8 encoding
@@ -19,7 +20,7 @@ set relativenumber              " Show line numbers relative to cursor
 
 syntax enable                   " Enable syntax highlighting
 set background=light            " Use a light background by default
-colorscheme solarized           " Use solarized color scheme, see https://github.com/altercation/solarized/tree/master/vim-colors-solarized
+colorscheme solarized           " Use solarized color scheme, see http://github.com/altercation/solarized/tree/master/vim-colors-solarized
 call togglebg#map("<F5>")       " Map F5 to toggle betwee light and dark background
 " Syntax highlight JSON files as JavaScript
 autocmd BufNewFile,BufRead *.json set ft=javascript
