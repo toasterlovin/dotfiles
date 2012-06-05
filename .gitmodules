@@ -31,3 +31,6 @@
 [submodule "vim/vim.symlink/bundle/zencoding-vim"]
 	path = vim/vim.symlink/bundle/zencoding-vim
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "mail/mutt-colors-solarized.symlink"]
+	path = mail/mutt-colors-solarized.symlink
+	url = https://github.com/altercation/mutt-colors-solarized.git
