@@ -1,11 +1,3 @@
-" Credits
-
-" My vim configuration is largely copied from and inspired by Mislav Marohnic.
-" Specifically, this blog post:  http://mislav.uniqpath.com/2011/12/vim-revisited/
-
-" A lot of credit is due to Tim Pope, who is the author of a bunch of useful
-" Vim plugins. Find his work at https://github.com/tpope
-
 call pathogen#infect()          " Load installed plugins with Pathogen
 runtime macros/matchit.vim      " Enable matchit for textobj-rubyblock
 
@@ -55,3 +47,11 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" Credits
+
+" My vim configuration is largely copied from and inspired by Mislav Marohnic.
+" Specifically, this blog post:  http://mislav.uniqpath.com/2011/12/vim-revisited/
+
+" A lot of credit is due to Tim Pope, who is the author of a bunch of useful
+" Vim plugins. Find his work at https://github.com/tpope
