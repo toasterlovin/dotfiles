@@ -6,3 +6,6 @@ PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Load RVM function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# Add path to NODE_PATH per homebrew instructions
+NODE_PATH=/usr/local/lib/node_modules
