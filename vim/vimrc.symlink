@@ -3,7 +3,6 @@ runtime macros/matchit.vim      " Enable matchit for textobj-rubyblock
 
 set nocompatible                " Choose no compatibility with legacy vi
 set encoding=utf-8              " Use UTF-8 encoding
-filetype plugin indent on       " Load file type plugins + indentation
 
 set showcmd                     " Display incomplete commands
 set ruler                       " Show column and row coordinates of cursor
@@ -14,13 +13,21 @@ syntax enable                   " Enable syntax highlighting
 set background=light            " Use a light background by default
 colorscheme solarized           " Use solarized color scheme, see http://github.com/altercation/solarized/tree/master/vim-colors-solarized
 call togglebg#map("<F5>")       " Map F5 to toggle betwee light and dark background
-" Syntax highlight JSON files as JavaScript
-autocmd BufNewFile,BufRead *.json set ft=javascript
+
+if has("autocmd")
+   " Load file type plugins + indentation
+   filetype plugin indent on
+
+   " Syntax highlight JSON files as JavaScript
+   autocmd BufNewFile,BufRead *.json set filetype=javascript
+endif
 
 "" Whitespace
 set nowrap                      " Don't wrap lines
-set tabstop=2 shiftwidth=2      " A tab is two spaces (or set this to 4)
 set expandtab                   " Use spaces, not tabs (optional)
+set tabstop=2                   " How many columns in a tab, if they are present
+set shiftwidth=2                " How many columns to shift in normal mode
+set softtabstop=2               " How many columns to backspace in insert mode
 set backspace=indent,eol,start  " Backspace through everything in insert mode
 
 "" List chars
