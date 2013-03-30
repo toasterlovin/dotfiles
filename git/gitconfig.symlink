@@ -1,11 +1,8 @@
 [user]
   name = Rico Jones
-  email = rico@jane.ai
+  email = rico@toasterlovin.com
 [core]
-  excludesfile = /Users/richardjones/.gitignore
+  excludesfile = ~/.gitignore
   # Avoid error when using Vim to edit commit messages
   # http://tooky.co.uk/2010/04/08/there-was-a-problem-with-the-editor-vi-git-on-mac-os-x.html
   editor = /usr/bin/vim
-[include]
-  # Import Github settings
-  path = ~/.github
