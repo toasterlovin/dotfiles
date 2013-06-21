@@ -1,11 +1,40 @@
-export PS1="\[\e[0;35m\][\d \t][\u@\h]\n\w $ \[\e[0m\]"
+#!/bin/bash
 
 # Put the Homebrew binary directories before the system directories in the path.
 # This is required for some brews to work correctly.
 PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
 
+# Add path to NODE_PATH per homebrew instructions
+NODE_PATH=/usr/local/lib/node_modules
+
 # Load RVM function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-# Add path to NODE_PATH per homebrew instructions
-NODE_PATH=/usr/local/lib/node_modules
+# Adds Git status to command prompt and completion of Git commands
+# Credit goes for this goes to Jason Fox, see http://neverstopbuilding.net/gitpro/
+
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
+RED="\[\033[0;31m\]"
+GREEN="\[\033[0;32m\]"
+YELLOW="\[\033[0;33m\]"
+BLUE="\[\033[34m\]"
+MAGENTA="\[\033[0;35m\]"
+CYAN="\[\033[0;36m\]"
+WHITE="\[\033[0;37m\]"
+GIT_PS1_SHOWDIRTYSTATE=true
+export LS_OPTIONS='--color=auto'
+export CLICOLOR='Yes'
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+
+export PS1=$RED"\u@\h"'$(
+    if [[ $(__git_ps1) =~ \*\)$ ]]
+    then echo "'$YELLOW'"$(__git_ps1 " (%s)")
+    elif [[ $(__git_ps1) =~ \+\)$ ]]
+    then echo "'$MAGENTA'"$(__git_ps1 " (%s)")
+    else echo "'$CYAN'"$(__git_ps1 " (%s)")
+    fi)'$BLUE" \w"$GREEN": "
+
+alias ll='ls -lah'
+alias gg='git status -s'
