@@ -1,4 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim " Load pathogem
 call pathogen#infect()          " Load installed plugins with Pathogen
+
 runtime macros/matchit.vim      " Enable matchit for textobj-rubyblock
 
 set nocompatible                " Choose no compatibility with legacy vi
