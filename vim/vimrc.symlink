@@ -57,6 +57,20 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Shorcuts
+let mapleader = "," " Remap leader key to comma
+map <Leader>tc :w<CR>:.Rake<CR>
+map <Leader>ta :w<CR>:Rake<CR>
+map <Leader>tu :w<CR>:Rake test:units<CR>
+map <Leader>tf :w<CR>:Rake test:functionals<CR>
+map <Leader>ti :w<CR>:Rake test:integration<CR>
+map <Leader>tt :w<CR>:Rake test<CR>
+map <Leader>w  :w<CR>
+map <Leader>q  :q<CR>
+map <Leader>gs :Gstatus<CR>
+map <Leader>gc :Gcommit<CR>
+map <Leader>ga :Gcommit --amend<CR>
+
 " Credits
 
 " My vim configuration is largely copied from and inspired by Mislav Marohnic.
