@@ -59,14 +59,20 @@ nnoremap <c-l> <c-w>l
 
 " Shorcuts
 let mapleader = "," " Remap leader key to comma
+map <Leader>w  :w<CR>
+map <Leader>q  :q<CR>
+
 map <Leader>tc :w<CR>:.Rake<CR>
 map <Leader>ta :w<CR>:Rake<CR>
+
 map <Leader>tu :w<CR>:Rake test:units<CR>
 map <Leader>tf :w<CR>:Rake test:functionals<CR>
 map <Leader>ti :w<CR>:Rake test:integration<CR>
-map <Leader>tt :w<CR>:Rake test<CR>
-map <Leader>w  :w<CR>
-map <Leader>q  :q<CR>
+map <Leader>ts :w<CR>:Rake test<CR>
+
+map <Leader>sf :w<CR>:Rake spec:features<CR>
+map <Leader>ss :w<CR>:Rake spec<CR>
+
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>ga :Gcommit --amend<CR>
