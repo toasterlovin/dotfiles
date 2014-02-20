@@ -1,8 +1,10 @@
 #!/bin/bash
 
+source ~/.profile
+
 # Put the Homebrew binary directories before the system directories in the path.
 # This is required for some brews to work correctly.
-PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Add path to NODE_PATH per homebrew instructions
 NODE_PATH=/usr/local/lib/node_modules
