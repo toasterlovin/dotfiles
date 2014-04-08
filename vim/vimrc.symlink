@@ -70,12 +70,39 @@ map <Leader>tf :w<CR>:Rake test:functionals<CR>
 map <Leader>ti :w<CR>:Rake test:integration<CR>
 map <Leader>ts :w<CR>:Rake test<CR>
 
+map <Leader>sm :w<CR>:Rake spec:models<CR>
 map <Leader>sf :w<CR>:Rake spec:features<CR>
 map <Leader>ss :w<CR>:Rake spec<CR>
 
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>ga :Gcommit --amend<CR>
+
+map <Leader>ec :Econtroller 
+map <Leader>ef :Efixture 
+map <Leader>eh :Ehelper 
+map <Leader>ei :Eintegrationtest 
+map <Leader>ej :Ejavascript 
+map <Leader>emi :Emigration 
+map <Leader>emo :Emodel 
+map <Leader>esc :Eschema 
+map <Leader>esp :Espec 
+map <Leader>est :Estylesheet 
+map <Leader>eu :Eunittest 
+map <Leader>ev :Eview 
+
+map <Leader>vc :Vcontroller 
+map <Leader>vf :Vfixture 
+map <Leader>vh :Vhelper 
+map <Leader>vi :Vintegrationtest 
+map <Leader>vj :Vjavascript 
+map <Leader>vmi :Vmigration 
+map <Leader>vmo :Vmodel 
+map <Leader>vsc :Vschema 
+map <Leader>vsp :Vspec 
+map <Leader>vst :Vstylesheet 
+map <Leader>vu :Vunittest 
+map <Leader>vv :Vview 
 
 " Credits
 
