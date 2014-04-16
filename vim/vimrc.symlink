@@ -85,7 +85,7 @@ map <Leader>ei :Eintegrationtest
 map <Leader>ej :Ejavascript 
 map <Leader>emi :Emigration 
 map <Leader>emo :Emodel 
-map <Leader>esc :Eschema 
+map <Leader>esc :Eschema<CR>
 map <Leader>esp :Espec 
 map <Leader>est :Estylesheet 
 map <Leader>eu :Eunittest 
@@ -98,7 +98,7 @@ map <Leader>vi :Vintegrationtest
 map <Leader>vj :Vjavascript 
 map <Leader>vmi :Vmigration 
 map <Leader>vmo :Vmodel 
-map <Leader>vsc :Vschema 
+map <Leader>vsc :Vschema<CR>
 map <Leader>vsp :Vspec 
 map <Leader>vst :Vstylesheet 
 map <Leader>vu :Vunittest 
