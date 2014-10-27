@@ -91,6 +91,7 @@ map <Leader>esp :Espec
 map <Leader>est :Estylesheet 
 map <Leader>eu :Eunittest 
 map <Leader>ev :Eview 
+map <Leader>ew :e app/workers/
 
 map <Leader>vc :Vcontroller 
 map <Leader>vf :Vfixture 
@@ -105,6 +106,7 @@ map <Leader>vsp :Vspec
 map <Leader>vst :Vstylesheet 
 map <Leader>vu :Vunittest 
 map <Leader>vv :Vview 
+map <Leader>vw :vs app/workers/
 
 " Credits
 
