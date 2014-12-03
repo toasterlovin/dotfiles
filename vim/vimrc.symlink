@@ -65,8 +65,8 @@ map <Leader>q  :q<CR>
 map <Leader>tc :w<CR>:.Rake<CR>
 map <Leader>ta :w<CR>:Rake<CR>
 
-map <Leader>tu :w<CR>:Rake test:units<CR>
-map <Leader>tf :w<CR>:Rake test:functionals<CR>
+map <Leader>tm :w<CR>:Rake test:models<CR>
+map <Leader>tc :w<CR>:Rake test:controllers<CR>
 map <Leader>ti :w<CR>:Rake test:integration<CR>
 map <Leader>ts :w<CR>:Rake test<CR>
 
