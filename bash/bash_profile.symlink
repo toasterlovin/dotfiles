@@ -40,3 +40,12 @@ export PS1=$RED"\u@\h"'$(
 
 alias ll='ls -lah'
 alias gg='git status -s'
+
+eval $(ssh-agent)
+
+function cleanup {
+  echo "Killing SSH-Agent"
+  kill -9 $SSH_AGENT_PID
+}
+
+trap cleanup EXIT
