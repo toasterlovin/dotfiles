@@ -62,7 +62,7 @@ let mapleader = "," " Remap leader key to comma
 map <Leader>w  :w<CR>
 map <Leader>q  :q<CR>
 
-map <Leader>tc :w<CR>:.Rake<CR>
+map <Leader>t. :w<CR>:.Rake<CR>
 map <Leader>ta :w<CR>:Rake<CR>
 
 map <Leader>tm :w<CR>:Rake test:models<CR>
