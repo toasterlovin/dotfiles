@@ -58,3 +58,6 @@
 [submodule "vim/vim.symlink/bundle/vim-bundler"]
 	path = vim/vim.symlink/bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
+[submodule "vim/vim.symlink/bundle/html5.vim"]
+	path = vim/vim.symlink/bundle/html5.vim
+	url = https://github.com/othree/html5.vim
