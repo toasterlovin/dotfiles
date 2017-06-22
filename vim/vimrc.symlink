@@ -40,6 +40,10 @@ set listchars+=trail:.          " Show trailing spaces as dots
 set listchars+=extends:>        " Show ">" in last column of line if line extends beyond right edge of screen
 set listchars+=precedes:<       " Show "<" in first column of line if line extends beyond left edge of screen
 
+"" Autocompletion
+set wildmode=longest,list,full
+set wildmenu
+
 "" Searching
 set hlsearch                    " Highlight matches
 set incsearch                   " Incremental searching
