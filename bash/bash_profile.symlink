@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ~/.profile
-
 # Adds Git status to command prompt and completion of Git commands
 # Credit goes for this goes to Jason Fox, see http://neverstopbuilding.net/gitpro/
 
@@ -30,6 +28,8 @@ export PS1=$RED"\u@\h"'$(
 
 alias ll='ls -lah'
 alias gg='git status -s'
+
+eval "$(rbenv init -)"
 
 eval $(ssh-agent)
 
