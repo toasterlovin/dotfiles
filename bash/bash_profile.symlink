@@ -2,19 +2,6 @@
 
 source ~/.profile
 
-# Put the Homebrew binary directories before the system directories in the path.
-# This is required for some brews to work correctly.
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# Put the heroku toolbelt ahead of heroku gem
-PATH=/usr/local/lib/heroku/bin:$PATH
-
-# Add path to NODE_PATH per homebrew instructions
-NODE_PATH=/usr/local/lib/node_modules
-
-# Load RVM function
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # Adds Git status to command prompt and completion of Git commands
 # Credit goes for this goes to Jason Fox, see http://neverstopbuilding.net/gitpro/
 
