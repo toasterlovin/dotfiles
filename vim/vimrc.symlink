@@ -83,36 +83,46 @@ map <Leader>gc :Gcommit<CR>
 map <Leader>ga :Gcommit --amend<CR>
 
 map <Leader>ec :Econtroller 
+map <Leader>ee :Eexporter 
 map <Leader>ef :Efixture 
 map <Leader>eh :Ehelper 
-map <Leader>ei :Eintegrationtest 
+map <Leader>ein :Eintegrationtest 
+map <Leader>eim :Eimporter 
 map <Leader>ej :Ejavascript 
 map <Leader>emi :Emigration 
 map <Leader>emo :Emodel 
 map <Leader>ema :Emailer 
+map <Leader>epr :Epresenter 
+map <Leader>ere :Erenderer 
 map <Leader>ert :e config/routes.rb<CR>
 map <Leader>esc :Eschema<CR>
+map <Leader>esc :Escraper 
 map <Leader>esp :Espec 
 map <Leader>est :Estylesheet 
 map <Leader>eu :Eunittest 
 map <Leader>ev :Eview 
-map <Leader>ew :e app/workers/
+map <Leader>ew :Eworker 
 
 map <Leader>vc :Vcontroller 
+map <Leader>ve :Vexporter 
 map <Leader>vf :Vfixture 
 map <Leader>vh :Vhelper 
-map <Leader>vi :Vintegrationtest 
+map <Leader>vin :Vintegrationtest 
+map <Leader>vim :Vimporter 
 map <Leader>vj :Vjavascript 
 map <Leader>vmi :Vmigration 
 map <Leader>vmo :Vmodel 
 map <Leader>vma :Vmailer 
+map <Leader>vpr :Vpresenter 
+map <Leader>vre :Vrenderer 
 map <Leader>vrt :vs config/routes.rb<CR>
 map <Leader>vsc :Vschema<CR>
+map <Leader>vsc :Vscraper 
 map <Leader>vsp :Vspec 
 map <Leader>vst :Vstylesheet 
 map <Leader>vu :Vunittest 
 map <Leader>vv :Vview 
-map <Leader>vw :vs app/workers/
+map <Leader>vw :Vworker 
 
 " Syntastic Stuff
 set statusline+=%#warningmsg#
