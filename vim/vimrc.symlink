@@ -124,12 +124,8 @@ map <Leader>vu :Vunittest
 map <Leader>vv :Vview 
 map <Leader>vw :Vworker 
 
-" Syntastic Stuff
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" Indentation Guides
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Credits
 
