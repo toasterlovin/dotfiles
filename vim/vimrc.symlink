@@ -62,25 +62,26 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 " Shorcuts
+imap jk <ESC>
 let mapleader = "," " Remap leader key to comma
 map <Leader>w  :w<CR>
 map <Leader>q  :q<CR>
 
 map <Leader>t. :w<CR>:.Rake<CR>
+map <Leader>th :w<CR>:.Rails<CR>
 map <Leader>ta :w<CR>:Rake<CR>
 
 map <Leader>tm :w<CR>:Rake test:models<CR>
 map <Leader>tc :w<CR>:Rake test:controllers<CR>
 map <Leader>ti :w<CR>:Rake test:integration<CR>
-map <Leader>ts :w<CR>:Rake test<CR>
-
-map <Leader>sm :w<CR>:Rake spec:models<CR>
-map <Leader>sf :w<CR>:Rake spec:features<CR>
-map <Leader>ss :w<CR>:Rake spec<CR>
+map <Leader>ts :w<CR>:Rake test:system<CR>
+map <Leader>tw :w<CR>:Rake test<CR>
 
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>ga :Gcommit --amend<CR>
+map <Leader>gd :Gdiff<CR>
+map <Leader>gl :Glog<CR>
 
 map <Leader>ec :Econtroller 
 map <Leader>ee :Eexporter 
