@@ -12,7 +12,12 @@ set cursorline                  " Highlight the line cursor is on
 set relativenumber              " Show line numbers relative to cursor
 
 syntax enable                   " Enable syntax highlighting
-set background=light            " Use a light background by default
+let hour = strftime("%H")       " Switch between light and dark depending on time of day
+if 6 <= hour && hour < 18
+  set background=light
+else
+  set background=dark
+endif
 colorscheme solarized           " Use solarized color scheme, see http://github.com/altercation/solarized/tree/master/vim-colors-solarized
 call togglebg#map("<F5>")       " Map F5 to toggle betwee light and dark background
 
