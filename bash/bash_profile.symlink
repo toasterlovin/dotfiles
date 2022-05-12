@@ -29,8 +29,6 @@ export PS1=$RED"\u@\h"'$(
 alias ll='ls -lah'
 alias gg='git status -s'
 
-eval "$(rbenv init -)"
-
 eval $(ssh-agent)
 
 function cleanup {
@@ -39,3 +37,5 @@ function cleanup {
 }
 
 trap cleanup EXIT
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(rbenv init - bash)"
