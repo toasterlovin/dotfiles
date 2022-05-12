@@ -51,13 +51,13 @@
 	url = https://github.com/rking/ag.vim.git
 [submodule "vim/vim.symlink/bundle/vim-ruby"]
 	path = vim/vim.symlink/bundle/vim-ruby
-	url = git://github.com/vim-ruby/vim-ruby.git
+	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/vim.symlink/bundle/vim-haml"]
 	path = vim/vim.symlink/bundle/vim-haml
 	url = https://github.com/tpope/vim-haml.git
 [submodule "vim/vim.symlink/bundle/vim-bundler"]
 	path = vim/vim.symlink/bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
 [submodule "vim/vim.symlink/bundle/html5.vim"]
 	path = vim/vim.symlink/bundle/html5.vim
 	url = https://github.com/othree/html5.vim
