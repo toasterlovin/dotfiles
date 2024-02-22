@@ -39,3 +39,13 @@ function cleanup {
 trap cleanup EXIT
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(rbenv init - bash)"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+export PATH=$PATH:~/dev/zig-macos-aarch64-0.11.0-dev.3395+1e7dcaa3a
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
